@@ -374,80 +374,81 @@ body {
 
 /*Styling for the footr div*/
 footer {
-  min-height: 100px;
   background-color: black;
+  min-height: 100px;
   color: white;
-  padding-top: 40px;
 }
 
-footer .top {
+footer .container {
   width: 80%;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  transition: all 0.1s ease-in-out;
 }
 
-footer .top p {
-  font-size: 30px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 1000;
+footer .container p:nth-of-type(1) {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  padding-top: 45px;
+  font-size: 2rem;
+  font-family: 'Alata', sans-serif;
+  font-weight: 500;
 }
 
-footer .top img {
-  margin-right: 10px;
-  padding: 5px 0px;
-  transition: all 0.3s ease-in-out;
-}
-
-footer .top img:hover {
-  border-bottom: 1px solid white;
-}
-
-footer .top img:nth-child(4) {
-  margin-right: 0;
-}
-
-footer .bottom {
-  width: 80%;
-  margin: auto;
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .bottom ol {
+footer .container ol {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
   display: flex;
   justify-content: flex-start;
+  padding-top: 20px;
 }
 
-footer .bottom ol li {
-  margin-right: 20px;
-  cursor: pointer;
+footer .container ol li {
   list-style-type: none;
+  margin-right: 50px;
+  cursor: pointer;
   position: relative;
-  padding: 0.5rem 0rem;
 }
 
-footer .bottom ol li::before {
+footer .container ol li::before {
   content: "";
   position: absolute;
-  top: 95%;
-  left: 12px;
-  transform: scale(0);
-  width: 50%;
+  top: 35%;
+  left: 25%;
   height: 2px;
+  width: 50%;
   background-color: white;
+  transform: scale(0);
   transition: all 0.3s ease-in-out;
 }
 
-footer .bottom ol li:hover::before {
+footer .container ol li:hover::before {
   transform: scale(1);
 }
 
-footer .bottom p {
+footer .container .footer-images {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  padding-top: 55px;
+  text-align: right;
+}
+
+footer .container .footer-images img {
+  margin-left: 10px;
+  padding: 0.4rem 0rem;
+}
+
+footer .container .footer-images img:hover {
+  border-bottom: thin solid white;
+}
+
+footer .container p:nth-of-type(2) {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  padding-top: 26px;
+  text-align: right;
   font-family: 'Josefin Sans', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

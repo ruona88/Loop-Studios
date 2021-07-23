@@ -1,12 +1,42 @@
-/*Media Queries for i-pad and i-pad pro in portait and landscape mode*/
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
+/*Media Query to change grid to flex at 1300px*/
+@media only screen and (max-width: 1300px) {
   .first-div {
     background-image: url("Assets/mobile/image-hero.jpg");
-    margin-bottom: 12vh;
   }
+  .first-div header h1 {
+    /*Styling for the logo*/
+    font-size: 3.5rem;
+  }
+  .first-div header ol li {
+    font-size: 1.2rem;
+  }
+  .first-div p {
+    /*Change font-size of the header main-text*/
+    font-size: 6rem;
+    width: 100%;
+  }
+  .second-div {
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .second-div .text-vr p:nth-of-type(1) {
+    padding: 0;
+    font-size: 4.2rem;
+    text-align: center;
+    margin: 30px 0 30px 0;
+  }
+  .second-div .text-vr p:nth-of-type(2) {
+    padding: 0;
+    font-size: 2rem;
+    color: #8c8c8c;
+    text-align: center;
+  }
+}
+
+/*Media Queries to change navigation @ 1200px*/
+@media only screen and (max-width: 1150px) {
   .first-div header h1 {
     z-index: 2;
   }
@@ -23,8 +53,8 @@
     height: 100vh;
     background-color: black;
     transition: all 0.4s ease-in-out;
-    transform: scale(0);
     transform-origin: 90% 12%;
+    transform: scale(0);
   }
   .first-div header ol li {
     margin-left: 0rem;
@@ -56,28 +86,45 @@
   .first-div header .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translateX(5px) translateY(-7px);
   }
-  .first-div p {
-    width: 100%;
-    font-size: 5rem;
-  }
-  /*Styling for the second */
-  .second-div {
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
+  /*Changing the grid to a two-column grid*/
+  .our-creations {
+    grid-template-rows: 30px 70px repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
     height: fit-content;
   }
-  .second-div .text-vr p:nth-of-type(1) {
-    padding: 0;
-    font-size: 3.6rem;
-    text-align: center;
-    margin: 30px 0 30px 0;
+  .our-creations .deep-earth {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
+    padding-bottom: 23px;
   }
-  .second-div .text-vr p:nth-of-type(2) {
-    padding: 0;
-    font-size: 2rem;
-    color: #8c8c8c;
-    text-align: center;
+  .our-creations .night-arcade {
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 2;
+  }
+  .our-creations .soccer-team {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 2;
+  }
+  .our-creations .the-grid {
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 2;
+  }
+  .our-creations .from-up {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 2;
+  }
+  .our-creations .pocket-borealis {
+    grid-row: 5 / span 1;
+    grid-column: 3 / span 2;
+  }
+  .our-creations .the-curiosity {
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 2;
+  }
+  .our-creations .make-it {
+    grid-row: 6 / span 1;
+    grid-column: 3 / span 2;
   }
 }
 /*# sourceMappingURL=mediaqueries.css.map */
