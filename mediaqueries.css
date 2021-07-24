@@ -40,7 +40,7 @@
   .first-div header h1 {
     z-index: 2;
   }
-  .first-div header ol {
+  .first-div header nav ol {
     border: thin solid white;
     padding: 0;
     justify-content: center;
@@ -56,7 +56,7 @@
     transform-origin: 90% 12%;
     transform: scale(0);
   }
-  .first-div header ol li {
+  .first-div header nav ol li {
     margin-left: 0rem;
     justify-self: flex-start;
     font-size: 2.5rem;
@@ -64,26 +64,26 @@
     text-transform: uppercase;
     padding: 0.5rem 3rem;
   }
-  .first-div header ol li:hover {
+  .first-div header nav ol li:hover {
     border: thin solid white;
   }
-  .first-div header ol li::before {
+  .first-div header nav ol li::before {
     height: 0px;
   }
   .first-div header ol.active {
     transform: scale(1);
   }
-  .first-div header .hamburger {
+  .first-div header nav .hamburger {
     display: block;
     z-index: 2;
   }
-  .first-div header .hamburger.active span:nth-child(2) {
+  .first-div header nav .hamburger.active span:nth-child(2) {
     display: none;
   }
-  .first-div header .hamburger.active span:nth-child(1) {
+  .first-div header nav .hamburger.active span:nth-child(1) {
     transform: rotate(45deg);
   }
-  .first-div header .hamburger.active span:nth-child(3) {
+  .first-div header nav .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translateX(5px) translateY(-7px);
   }
 }
