@@ -22,6 +22,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
+  min-height: 600px;
   color: white;
   padding: 0rem 5rem;
   margin-bottom: 80px;
@@ -44,14 +45,14 @@ body {
   text-decoration: none;
 }
 
-.first-div header ol {
+.first-div header nav ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 4.5px;
 }
 
-.first-div header ol li {
+.first-div header nav ol li {
   list-style-type: none;
   margin-left: 2rem;
   position: relative;
@@ -60,7 +61,7 @@ body {
   font-size: 1.3vw;
 }
 
-.first-div header ol li::before {
+.first-div header nav ol li::before {
   content: "";
   position: absolute;
   top: 90%;
@@ -73,23 +74,23 @@ body {
   transition-timing-function: ease-in-out;
 }
 
-.first-div header ol li:hover::before {
+.first-div header nav ol li:hover::before {
   left: 28px;
 }
 
-.first-div header ol li a {
+.first-div header nav ol li a {
   color: white;
   text-decoration: none;
 }
 
-.first-div header .hamburger {
+.first-div header nav .hamburger {
   cursor: pointer;
   align-self: flex-end;
   margin-bottom: 3px;
   display: none;
 }
 
-.first-div header .hamburger span {
+.first-div header nav .hamburger span {
   width: 40px;
   height: 6px;
   display: block;
