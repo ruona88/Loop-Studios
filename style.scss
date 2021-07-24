@@ -140,7 +140,7 @@ body {
 .second-div {
     width: 80%;
     margin: auto;
-    height: 350px;
+    height: fit-content;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: minmax(150px, 360px) repeat(10, 1fr);
@@ -325,6 +325,7 @@ footer {
     background-color: black;
     min-height: 100px;
     color: white;
+    
 
     .container {
         width: 80%;
@@ -340,7 +341,7 @@ footer {
             padding-top: 45px;
             font-size: 2rem;
             font-family: 'Alata', sans-serif;
-            font-weight: 500;
+            font-weight: 800;
         }
 
         ol {
